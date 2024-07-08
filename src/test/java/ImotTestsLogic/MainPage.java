@@ -14,22 +14,22 @@ public class MainPage {
 
     WebDriverWait wait;
 
-    public static void clickElement(ChromeDriver driver, By element) {
+    public void clickElement(ChromeDriver driver, By element) {
 
         driver.findElement(element).click();
     }
 
-    public static void waitForCokies(ChromeDriver driver, By element, int durationInSeconds) {
+    public void waitForCokies(ChromeDriver driver, By element, int durationInSeconds) {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(durationInSeconds));
         wait.until(ExpectedConditions.elementToBeClickable(proceedBtn));
     }
 
-    public static void sendKeys(ChromeDriver driver, By locator, String sendKeys) {
+    public void sendKeys(ChromeDriver driver, By locator, String sendKeys) {
         driver.findElement(locator).sendKeys(sendKeys);
     }
 
-    public static String getText(ChromeDriver driver, By locator) {
+    public String getText(ChromeDriver driver, By locator) {
         String textFromElement = driver.findElement(locator).getText();
         return textFromElement;
     }
@@ -50,6 +50,4 @@ public class MainPage {
         String resutlLabelText = driver.findElement(resultLabel).getText();
         return resutlLabelText;
     }
-
-
 }

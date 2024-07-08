@@ -13,5 +13,6 @@ public class Locators {
     public static By maxPriceBox = By.xpath("//input[@class=\"sw70\"][@name=\"f29\"]");
     public static By searchBtn = By.xpath("//input[@value=\"Т Ъ Р С И\"]");
     public static By resultLabel = By.xpath("//div[@style=\"font-weight:bold;\"]");
-
+    public static By registerBtn = By.xpath("//a[@href=\"//www.imot.bg/pcgi/imot.cgi?act=26&logact=2\"]");
+    public static By loginBtn = By.xpath("//a[@href=\"//www.imot.bg/pcgi/imot.cgi?act=26&logact=1\"]");
 }

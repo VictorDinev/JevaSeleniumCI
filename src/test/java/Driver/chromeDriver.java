@@ -1,4 +1,5 @@
 package Driver;
+
 import org.openqa.selenium.chrome.*;
 
 import java.util.concurrent.TimeUnit;
@@ -9,7 +10,8 @@ public class chromeDriver {
 
     private static ChromeDriver driver = new ChromeDriver();
 
-    private chromeDriver(){};
+    private chromeDriver() {
+    }
 
     public static ChromeDriver getDriver() {
 
